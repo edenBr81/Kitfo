@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div th:fragment="firstlink">
+    <h5>Fragments</h5>
+    <h6 class="text-center">Where does this content come from?</h6>
+    <p>There is a folder called 'fragments' in the templates folder. This contains the base for the navigation. Fragments can be used from ANY html file.</p>
+    <p>Have a look at how the navbase file is strucutred.</p>
+    <p>By using the syntax  th:fragment="thenav(menuoption)", you are establishing a fragment that will accept a 'menuoption' variable</p>
+    <p>Depending on the value of this variable, you can add styling. See the 'Home' and 'Link' options in the navbar</p>
+    <p>The styles that are applied will depend on your template, so make sure you know how the active links work for the template you are using. </p>
+    <p>Once you find the source fo this text, you are ready to proceed!</p>
+    <p>Remember: Use fragments wisely. Sometimes you don't need to put text in a fragment - when you're only going to use it once. This text could just have easily gone onto the firstlink page. But when you want to re-use segments of code, fragments are the best way to do so in html.</p>
+    <p>Now, add the active links to your navigation for the Recipe Book.</p>
+    </div>
+</body>
+</html>

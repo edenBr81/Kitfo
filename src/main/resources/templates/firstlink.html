@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head th:replace="/fragments/navbase::navhead">
+    <meta charset="UTF-8">
+    <title th:text="${title}==''?${title}:'Thymeleaf tutorial'"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+<nav th:replace="/fragments/navbase::thenav(${menuoption})"></nav>
+<div class="container">
+    <h6 th:text="${menuoption}"></h6>
+    <p>The value above is the value in the meuoption variable when the link is clicked. Look at the MainController to see how that works.</p>
+    <div th:replace="/fragments/pagecontent::firstlink"></div>
+</div>
+<span th:replace="/fragments/navbase::scripts"></span>
+</body>
+</html>

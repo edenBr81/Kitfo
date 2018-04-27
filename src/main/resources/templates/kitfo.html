@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head th:replace="/fragments/navbase::navhead">
+    <meta charset="UTF-8">
+    <title>Kitfo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+<nav th:replace="/fragments/navbase::thenav(${menuoption})"></nav>
+<div class="container">
+    <h1 th:text="${menuoption}"></h1>
+
+
+    <h2>Ingredients</h2>
+    <img src="/images/kitfo.jpeg" alt="kitfo" height="1100" width="600">
+    <ul>
+        <li>1 1⁄2 lb. beef tenderloin</li>
+        <li>1⁄2 cup spiced butter (see recipe for Nit'r Qibe)</li>
+        <li>1 small onion, finely chopped</li>
+        <li>2 cloves garlic, finely chopped</li>
+        <li>1 tbsp. finely chopped serrano chile</li>
+        <li>1 tbsp. finely chopped peeled ginger</li>
+        <li>1 tbsp. Berbere Spice Mix</li>
+        <li>Kosher salt and freshly ground black pepper, to taste</li>
+        <li>Fresh lemon juice, to taste</li>
+    </ul>
+
+</div>
+<span th:replace="/fragments/navbase::scripts"></span>
+</body>
+</html>
